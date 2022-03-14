@@ -13,7 +13,7 @@
     - mongodb
 
 - name: Catalogue setup
-  hosts: catalogue
+  hosts: CATALOGUE
   become: yes
   tags: CATALOGUE
   roles:
