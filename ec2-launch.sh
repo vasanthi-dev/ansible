@@ -23,7 +23,7 @@ TEMP_NAME="my-spot-req"
 TEMP_VER=9
 ZONE_ID="Z01304753HAJF01BJ7NCL"
 
-#hello1
+#hello2
 
 if [ -z "$1" ]; then
   echo -e  "\e[1;31mInput is missing\e[0m"
