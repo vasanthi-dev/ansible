@@ -7,3 +7,9 @@
   template:
     src: records.yml
     dest: /opt/prometheus/records.yml
+
+- name: Restart Prometheus
+  systemd:
+    name: prometheus
+    state: restarted
+    enabled: yes
