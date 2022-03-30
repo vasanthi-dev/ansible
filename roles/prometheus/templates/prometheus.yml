@@ -40,13 +40,13 @@ scrape_configs:
 #        access_key: PUT_THE_ACCESS_KEY_HERE
 #        secret_key: PUT_THE_SECRET_KEY_HERE
         port: 9100
-#        filters:
-#          - name: tag:Monitor
-#            values: [ "yes" ]
-#    relabel_configs:
-#      - source_labels: [__meta_ec2_tag_ENV]
-#        target_label: environment
-#      - source_labels: [__meta_ec2_tag_Name]
-#        target_label: instanceName
-#      - source_labels: [__meta_ec2_tag_COMPONENT]
-#        target_label: component
+        filters:
+          - name: tag:Monitor
+            values: [ "yes" ]
+    relabel_configs:
+      - source_labels: [__meta_ec2_tag_ENV]
+        target_label: environment
+      - source_labels: [__meta_ec2_tag_Name]
+        target_label: instanceName
+      - source_labels: [__meta_ec2_tag_COMPONENT]
+        target_label: component
