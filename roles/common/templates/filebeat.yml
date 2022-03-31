@@ -4,6 +4,9 @@ filebeat.inputs:
   enabled: true
   paths:
     - /var/log/{{COMPONENT}}.log
+  fields:
+      componentName: {{COMPONENT}}
+      env: {{ENV}}
 
 filebeat.config.modules:
   path: ${path.config}/modules.d/*.yml
