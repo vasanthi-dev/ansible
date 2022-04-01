@@ -1,6 +1,6 @@
 filebeat.inputs:
 
-- type: filestream
+- type: log
   enabled: true
   paths:
     - {{LOG_FILE}}
