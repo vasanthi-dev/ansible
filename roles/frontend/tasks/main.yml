@@ -36,6 +36,11 @@
     src: roboshop.conf
     dest: /etc/nginx/default.d/roboshop.conf
 
+- name: Copy Nignx Main Config
+  ansible.builtin.template:
+    src: nginx.conf
+    dest: /etc/nginx/nginx.conf
+
 - name: Start Nginx
   ansible.builtin.systemd:
     name: nginx
