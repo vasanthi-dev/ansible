@@ -17,5 +17,5 @@
     path: /home/roboshop/{{COMPONENT}}
   become_user: roboshop
 
-- name: Update Configuration file and start the service
-  import_tasks: systemd.yml
+#- name: Update Configuration file and start the service
+#  import_tasks: systemd.yml
